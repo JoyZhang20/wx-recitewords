@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="page-body">
+
+  <view class="page-section mid">
+    <view class="weui-cells__title" model:value="{{index}}">序号{{index+1}}/{{arrLen}}</view>
+    <button size="mini" class="btn-back" style="width:15%;margin-right:30px" bindtap="backIndex">←</button>
+    <button class="btn"  bindtap="clickButton" style="width:80%;height:65px;font-size:25px;text-align:center;margin-top: 100rpx;">{{enShow}} </button>
+    <button class="btn2" bindtap="clickButton" style="color:white;width:80%;height:65px;font-size:18px;text-align:center;margin-top:30rpx;margin-top: 300rpx;" >{{chShow}} </button>
+  </view>
+  <view class="page-section">
+    <button class="btn3" bindtap="markWord" style="color:white;width:80%;height:65px;font-size:18px;text-align:center;margin-top: 100rpx;" >不认识</button>
+      <button class="radius-btn1" size="mini" bindtap="copyWords">复制</button>
+      <button class="radius-btn2" size="mini" bindtap="initWord">录入</button>
+  </view>
+  <view class="page-section">
+    <view class="textarea-wrp">
+      <textarea model:value="{{plainText}}"  maxlength="-1" placeholder="input here" style="height: 3em;" />
+    </view>
+  </view>
+</view>
+
+
+
+
